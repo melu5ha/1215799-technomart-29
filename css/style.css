@@ -1,0 +1,389 @@
+.page_body {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+.page img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header*/
+.main_header {
+  background-color: #F1F5F7;;
+}
+
+.header_button_image {
+  width: 17px;
+  height: 17px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main_header_buttons {
+  background-color: #293449;
+}
+
+.header_button {
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.marks:active {
+  background-color: #161D29;;
+}
+
+.checkout {
+  background-color: #63A63E;
+}
+
+.checkout:hover {
+  background-color: #5FBB2D;
+}
+
+.checkout:active {
+  background-color: #63A63E;
+}
+
+.header_button:hover {
+  color: #FFFFFF;
+}
+
+.header_button:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header_content {
+  color: #EE3643;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.header_content_number {
+  color: #EE3643;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  border: 3px solid #FFFFFF;
+}
+
+.header_contacts {
+  color: #32425C;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.login_list {
+  list-style: none;
+}
+
+.login_list li {
+  display: inline;
+}
+
+.login_link {
+  color: #000000;
+  background-color: #FFFFFF;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.login_link:hover {
+  color: #EE3643;
+}
+
+.login_link:active {
+  color: #C5C5C5;
+}
+
+.navigation_list {
+  background-color: #32425C;
+  list-style: none;
+}
+
+.navigation_list li {
+  display: inline;
+}
+
+.navigation_link {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.navigation_link:hover {
+  background-color: #293449;
+}
+
+.navigation_link:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1D2739;
+}
+
+/*container*/
+
+.sections_item {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 30px;
+  width: 300px;
+  height: 123px;
+}
+
+.sections_item_button {
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.materials {
+  background-color: #FFBF47;
+}
+
+.instruments {
+  background-color: #3BBCE3;
+}
+
+.technics {
+  background-color: #DC91D8;
+}
+
+.sale {
+  background-color: #8ED78F;
+}
+
+.delivery {
+  background-color: #FFC047;
+}
+
+.button {
+  color: #FFFFFF;
+  background-color: #EE3643;
+  font-size: 14px;
+  line-height: 18px;
+  width: 100px;
+  height: 18px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #CA2C37;
+}
+
+.button:active {
+  background-color: #BA2732;
+}
+
+.sections_item_button:hover {
+  background-color: rgba(197, 197, 197, 0.3);
+}
+
+.sections_item_button:active {
+  background-color: rgba(169, 169, 169, 0.3);
+}
+
+.popular_title {
+  color: #32425C;
+  font-size: 30px;
+  line-height: 30px;
+  background-color: #F9F5F0;
+  width: 940px;
+  height: 89px;
+  text-transform: uppercase;
+}
+
+.popular_products_list {
+  list-style: none;
+}
+
+.product_title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.product_price {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #A9A9A9;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.button_price {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #FFFFFF;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  background-color: red;
+}
+
+.manufacturer_list {
+  list-style: none;
+}
+
+.services {
+  background-color: #F1F5F7;
+}
+
+.services_title {
+  color: #000000;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services_text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services_list {
+  list-style: none;
+}
+
+.services_link {
+  color: #FFFFFF;
+  font-size: 21px;
+  line-height: 30px;
+  background-color: #32425C;
+  font-weight: bold;
+}
+
+.services_link:hover {
+  background-color: #293449;
+}
+
+.services_link:active {
+  background-color: #FFFFFF;
+  color: #32425C;
+}
+
+.delivery_title {
+  color: #32425C;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.information_title {
+  color: #000000;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.information_text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.companies_item {
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main_footer {
+  background-color: #32425C;
+}
+
+.footer_logo {
+  background-color: red;
+}
+
+.footer_nav_list {
+  list-style: none;
+}
+
+.footer_nav_list li {
+  display: inline;
+}
+
+.footer_nav_link {
+  color: #F1F5F7;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer_contacts_information {
+  color: #F3F7F9;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer_catalog_list {
+  list-style: none;
+}
+
+.footer_catalog_list li {
+  display: inline;
+}
+
+.footer_catalog_link {
+  color: #FFD180;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer_nav_link:hover, .footer_catalog_link:hover {
+  text-decoration: underline;
+}
+
+.footer_nav_link:active {
+  text-decoration: none;
+  color: rgba(241, 245, 247, 0.5);
+}
+
+.footer_catalog_link:active {
+  text-decoration: none;
+  color: rgba(255, 209, 128, 0.5);
+}
+
+.social_list li {
+  display: inline;
+  background-color: #212A3A;
+}
+
+.footer_copyright {
+  background-color: #293449;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.social_list {
+  list-style: none;
+}
+
+.copyright_link {
+  color: #FFD180;/* В Figma не смог понять какой точно это цвет, поэтому пока взял цвет со ссылок на каталог в футере*/
+}
+
+.copyright_link:hover {
+  text-decoration: underline;
+}
+
+.copyright_link:active {
+  text-decoration: none;
+  color: red; /* В Figma не смог понять какой точно это цвет, поэтому пока что просто красный сделал*/
+}
+
+
+
+

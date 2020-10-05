@@ -46,6 +46,7 @@
   font-weight: normal;
   font-size: 18px;
   width: 1200px;
+  margin: 0 auto;
 }
 
 .catalog_page_body {
@@ -53,6 +54,7 @@
   font-weight: normal;
   font-size: 18px;
   width: 1200px;
+  margin: 0 auto;
 }
 
 .page img {
@@ -73,6 +75,11 @@
 
 .main_header_buttons {
   background-color: var(--basic-background-color);
+}
+
+.main_header_buttons_content {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .header_button {
@@ -107,6 +114,14 @@
 
 .header_button:active {
   color: var(--basic-half-white);
+}
+
+.header_position {
+  width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
 }
 
 .header_content {
@@ -182,9 +197,16 @@
   color: var(--login-active-color);
 }
 
+.main_navigation_position {
+  width: 940px;
+  margin: 0 auto;
+}
+
 .navigation_list {
   background-color: var(--header-contact-color);
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation_list li {
@@ -208,8 +230,18 @@
 
 /*container*/
 
-.sections_list {
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+/* Может попробовать обернуть эти кнопки и слайдер в один грид и расположить их по координатам? */
+.sections_list_first {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
 }
 
 .sections_item {
@@ -246,6 +278,12 @@
 
 .delivery {
   background-color: var(--delivery-color);
+}
+
+.second_main_section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 20px;
 }
 
 .gallery {
@@ -291,19 +329,31 @@
   background-color: var(--section-active-color);
 }
 
+.sections_list_second {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+}
+
 .popular_title {
   color: var(--header-contact-color);
   font-size: 30px;
   line-height: 30px;
   background-color: var(--popular-color-title);
-  width: 940px;
   height: 89px;
   text-transform: uppercase;
 }
 
 .popular_products_list {
   list-style: none;
-  display: inline;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
 }
 
 .product_title {
@@ -333,13 +383,17 @@
 
 .manufacturer_list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .manufacturer_logo {
   background-color: var(--basic-white);
   width: 220px;
   height: 145px;
-  border: 1px solid var(--catalog-border-color);
 }
 
 .services {
@@ -360,8 +414,15 @@
   line-height: 24px;
 }
 
+.services_position {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .services_list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .services_link {
@@ -390,6 +451,12 @@
   text-transform: uppercase;
 }
 
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
 .information_title {
   color: var(--basic-black);
   font-size: 30px;
@@ -414,6 +481,8 @@
 
 .catalog {
   background-color: var(--basic-white);
+  width: 940px;
+  margin: 0 auto;
 }
 
 .catalog_nav_list {
@@ -441,6 +510,12 @@
   font-weight: normal;
 }
 
+.catalog_position {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 20px;
+}
+
 .filter_title, .sorting_title {
   font-family: "PT Sans", "Arial", sans-serif;
   color: var(--basic-black);
@@ -448,6 +523,15 @@
   line-height: 18px;
   text-transform: uppercase;
   font-weight: normal;
+}
+
+.catalog_products_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
 }
 
 .catalog_number_list {
@@ -502,8 +586,11 @@
   background-color: var(--header-contact-color);
 }
 
-.footer_logo {
-  background-color: red;
+.footer_nav {
+  width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .footer_nav_list {
@@ -518,6 +605,13 @@
   color: var(--main-header-color);
   font-size: 18px;
   line-height: 24px;
+}
+
+.footer_contacts {
+  width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .footer_contacts_information {
@@ -564,6 +658,13 @@
   color: var(--basic-white);
   font-size: 16px;
   line-height: 18px;
+}
+
+.footer_copyright_position {
+  width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .social_list {

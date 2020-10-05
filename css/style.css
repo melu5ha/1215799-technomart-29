@@ -65,16 +65,25 @@
 /* header*/
 .main_header {
   background-color: var(--main-header-color);
+  padding-bottom: 60px;
+}
+
+.main_header_buttons {
+  background-color: var(--basic-background-color);
+  height: 42px;
+}
+
+.main_header_logo {
+  background-image: url("../img/Layer 90 copy 2.svg"); /* Не могу понять почему картинка полностью не загружается*/
+  height: 60px;
+  width: 220px;
+  padding: 12px 57px 15px 51px;
 }
 
 .header_button_image {
   width: 17px;
   height: 17px;
   color: var(--basic-half-white);
-}
-
-.main_header_buttons {
-  background-color: var(--basic-background-color);
 }
 
 .main_header_buttons_content {
@@ -129,6 +138,11 @@
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 30px;
+  padding-top: 42px;
+  padding-bottom: 45px;
 }
 
 .header_content_number {
@@ -136,7 +150,13 @@
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
-  border: 3px solid var(--basic-white);
+  outline: 3px solid var(--basic-white);
+  outline-offset: -3px;
+  padding: 7px 45px 8px 39px;
+}
+
+.header_contact_position {
+  padding-top: 53px;
 }
 
 .header_contacts {
@@ -147,6 +167,10 @@
 
 .login_list {
   list-style: none;
+  padding: 0;
+  justify-self: right;
+  outline-offset: -5px;
+  margin-top: 58px;
 }
 
 .login_list li {
@@ -158,6 +182,15 @@
   background-color: var(--basic-white);
   font-size: 21px;
   line-height: 21px;
+}
+
+.login {
+  padding: 12px 27px 12px 19px;
+}
+
+.registration {
+  padding: 12px 24px;
+  margin-left: 5px;     /*не понимаю почему тут между входом и решистрацией все равно остается отступ, я все всроде убрал*/
 }
 
 .login_link:hover {
@@ -204,9 +237,12 @@
 
 .navigation_list {
   background-color: var(--header-contact-color);
+  height: 60px;
+  box-shadow: inset 0 -5px 0 var(--basic-background-color);
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 
 .navigation_list li {
@@ -231,10 +267,18 @@
 /*container*/
 
 .container {
+  padding-top: 59px;
+  padding-bottom: 70px;
+}
+
+.main_sections,
+.popular,
+.services_container,
+.information {
   width: 940px;
   margin: 0 auto;
 }
-/* Может попробовать обернуть эти кнопки и слайдер в один грид и расположить их по координатам? */
+
 .sections_list_first {
   list-style: none;
   margin: 0;
@@ -338,6 +382,15 @@
   row-gap: 20px;
 }
 
+.products {
+  margin-top: 59px;
+  margin-bottom: 70px;
+}
+
+.manufacturers {
+  margin-bottom: 70px;
+}
+
 .popular_title {
   color: var(--header-contact-color);
   font-size: 30px;
@@ -345,6 +398,8 @@
   background-color: var(--popular-color-title);
   height: 89px;
   text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .popular_products_list {
@@ -354,6 +409,11 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 20px;
+}
+
+.popular_products_item, .manufacturer_logo {
+  border: 1px solid var(--catalog-border-color);
+  box-sizing: border-box;
 }
 
 .product_title {
@@ -398,6 +458,7 @@
 
 .services {
   background-color: var(--main-header-color);
+  padding-top: 64px;
 }
 
 .services_title {
@@ -455,6 +516,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
+  padding-top: 70px;
 }
 
 .information_title {
@@ -462,6 +524,8 @@
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .information_text {
@@ -584,6 +648,12 @@
 
 .main_footer {
   background-color: var(--header-contact-color);
+}
+
+.footer_logo {
+  background-image: url("../img/Layer 90 copy.svg");
+  height: 47px;
+  width: 220px;
 }
 
 .footer_nav {

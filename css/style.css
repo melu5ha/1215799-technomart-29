@@ -545,12 +545,22 @@
 
 .catalog {
   background-color: var(--basic-white);
+  padding-top: 21px;
+}
+
+.catalog_item_title,
+.catalog_nav_container,
+.catalog_position,
+.catalog_product_information_container {
   width: 940px;
   margin: 0 auto;
 }
 
 .catalog_nav_list {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 20px;
 }
 
 .catalog_nav_item {
@@ -572,12 +582,16 @@
   line-height: 30px;
   text-transform: uppercase;
   font-weight: normal;
+  padding-top: 29px;
+  padding-left: 29px; /* Не могу понять почему здесь при паддинге разширяются границы */
+  padding-bottom: 30px;
 }
 
 .catalog_position {
   display: grid;
   grid-template-columns: 1fr 3fr;
   column-gap: 20px;
+  padding-top: 20px;
 }
 
 .filter_title, .sorting_title {
@@ -589,10 +603,15 @@
   font-weight: normal;
 }
 
+.catalog_products {
+  margin-bottom: 48px;
+}
+
 .catalog_products_list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-top: 28px;
+  padding-left: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
@@ -600,6 +619,8 @@
 
 .catalog_number_list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog_number_item {
@@ -629,11 +650,19 @@
   background-color: var(--main-header-color);
 }
 
+.catalog_product_information_container {
+  margin-top: 59px;
+  padding-top: 64px;
+  padding-bottom: 68px  ;
+}
+
 .catalog_product_title {
   color: var(--basic-black);
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
+  padding: 0;
+  margin-top: 0;
 }
 
 .catalog_product_content {

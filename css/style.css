@@ -70,31 +70,41 @@
 
 .main_header_buttons {
   background-color: var(--basic-background-color);
-  height: 42px;
-}
-
-.main_header_logo {
-  background-image: url("../img/Layer 90 copy 2.svg"); /* Не могу понять почему картинка полностью не загружается*/
-  height: 60px;
-  width: 220px;
-  padding: 12px 57px 15px 51px;
-}
-
-.header_button_image {
-  width: 17px;
-  height: 17px;
-  color: var(--basic-half-white);
+  min-height: 42px;
 }
 
 .main_header_buttons_content {
   width: 940px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+}
+
+.main_header_logo {
+  background-color: var(--header-content-color); /* Не могу понять почему картинка полностью не загружается*/
+  padding: 12px 56px;
+}
+
+.user_nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 720px;
 }
 
 .header_button {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
+}
+
+.marks {
+  margin-left: auto;
+}
+
+.checkout {
+  padding: 11px 16px 11px 19px;   /* ????? */
 }
 
 .marks:active {
@@ -128,9 +138,14 @@
 .header_position {
   width: 940px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 158px;
+}
+
+.header_content_position {
+  margin-left: 30px;
 }
 
 .header_content {
@@ -138,11 +153,8 @@
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 30px;
-  padding-top: 42px;
-  padding-bottom: 45px;
+  margin: 0;
+  padding: 0;
 }
 
 .header_content_number {
@@ -150,13 +162,9 @@
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
-  outline: 3px solid var(--basic-white);
-  outline-offset: -3px;
-  padding: 7px 45px 8px 39px;
 }
 
 .header_contact_position {
-  padding-top: 53px;
 }
 
 .header_contacts {
@@ -168,9 +176,6 @@
 .login_list {
   list-style: none;
   padding: 0;
-  justify-self: right;
-  outline-offset: -5px;
-  margin-top: 58px;
 }
 
 .login_list li {
@@ -182,15 +187,6 @@
   background-color: var(--basic-white);
   font-size: 21px;
   line-height: 21px;
-}
-
-.login {
-  padding: 12px 27px 12px 19px;
-}
-
-.registration {
-  padding: 12px 24px;
-  margin-left: 5px;     /*не понимаю почему тут между входом и решистрацией все равно остается отступ, я все всроде убрал*/
 }
 
 .login_link:hover {
@@ -237,16 +233,21 @@
 
 .navigation_list {
   background-color: var(--header-contact-color);
-  height: 60px;
+  min-height: 60px;
   box-shadow: inset 0 -5px 0 var(--basic-background-color);
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
   margin: 0;
-  padding: 0;
+  padding: 0 53px;
 
 }
 
 .navigation_list li {
   display: inline;
+  margin-top: 16px;
 }
 
 .navigation_link {
@@ -257,6 +258,7 @@
 
 .navigation_link:hover {
   background-color: var(--basic-background-color);
+  padding: 16px 24px 20px 27px; /* Отклоняются при наведении */
 }
 
 .navigation_link:active {
@@ -281,11 +283,10 @@
 
 .sections_list_first {
   list-style: none;
-  margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
 }
 
 .sections_item {
@@ -293,7 +294,7 @@
   font-size: 24px;
   line-height: 30px;
   width: 300px;
-  height: 123px;
+  min-height: 123px;
 }
 
 .sections_item_button {
@@ -325,9 +326,8 @@
 }
 
 .second_main_section {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  column-gap: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .gallery {
@@ -377,9 +377,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .products {
@@ -388,7 +388,7 @@
 }
 
 .manufacturers {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .popular_title {
@@ -400,21 +400,30 @@
   text-transform: uppercase;
   padding: 0;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular_title span {
+  margin-left: 28px;
 }
 
 .popular_products_list {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.popular_products_item, .manufacturer_logo {
+.popular_products_item {
+  width: 220px;
+  min-height: 318px;
   border: 1px solid var(--catalog-border-color);
   box-sizing: border-box;
 }
+
 
 .product_title {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -445,17 +454,24 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .manufacturer_logo {
   background-color: var(--basic-white);
-  width: 220px;
-  height: 145px;
+  min-width: 220px;
+  min-height: 145px;
+  border: 1px solid var(--catalog-border-color);
+  box-sizing: border-box;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
+.manufacturer_logo:nth-child(4n) {
+  margin-right: 0;
+}
+/* как тут лучше делать? там картинка под текст ложится*/
 .services {
   background-color: var(--main-header-color);
   padding-top: 64px;
@@ -476,8 +492,8 @@
 }
 
 .services_position {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 
 .services_list {
@@ -513,10 +529,13 @@
 }
 
 .information {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
+  display: flex;
   padding-top: 70px;
+  justify-content: space-between;
+}
+
+.information_container {
+  width: 460px;
 }
 
 .information_title {
@@ -679,25 +698,33 @@
   background-color: var(--header-contact-color);
 }
 
-.footer_logo {
-  background-image: url("../img/Layer 90 copy.svg");
-  height: 47px;
-  width: 220px;
-}
-
 .footer_nav {
   width: 940px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  min-height: 61px;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 auto 22px;
+}
+
+.footer_logo {
+  background-color: var(--header-content-color);
+  padding: 20px 41px;
+  align-self: center;
+
 }
 
 .footer_nav_list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+  width: 720px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer_nav_list li {
   display: inline;
+  margin-left: 58px;
 }
 
 .footer_nav_link {
@@ -708,23 +735,36 @@
 
 .footer_contacts {
   width: 940px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto 54px;
 }
 
 .footer_contacts_information {
   color: var(--footer-information-color);
   font-size: 18px;
   line-height: 24px;
+  min-width: 321px;
+  min-height: 49px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer_catalog_list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+  display: flex;
+  width: 716px;
+  justify-content: space-between;
 }
 
 .footer_catalog_list li {
   display: inline;
+}
+
+.footer_catalog_item:nth-child(1) {
+  margin-left: 95px;
 }
 
 .footer_catalog_link {
@@ -747,11 +787,6 @@
   color: var(--footer-catalog-active-color);
 }
 
-.social_list li {
-  display: inline;
-  background-color: var(--social-list-color);
-}
-
 .footer_copyright {
   background-color: var(--basic-background-color);
   color: var(--basic-white);
@@ -762,12 +797,17 @@
 .footer_copyright_position {
   width: 940px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social_list {
   list-style: none;
+}
+
+.social_list li {
+  display: inline;
+  background-color: var(--social-list-color);
 }
 
 .copyright_link {

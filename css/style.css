@@ -82,7 +82,8 @@
 }
 
 .main_header_logo {
-  background-color: var(--header-content-color); /* Не могу понять почему картинка полностью не загружается*/
+  background-color: var(--header-content-color);
+  box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.24);
   padding: 12px 56px;
 }
 
@@ -258,7 +259,6 @@
 
 .navigation_link:hover {
   background-color: var(--basic-background-color);
-  padding: 16px 24px 20px 27px; /* Отклоняются при наведении */
 }
 
 .navigation_link:active {
@@ -528,6 +528,12 @@
   text-transform: uppercase;
 }
 
+.delivery_container {
+  background-image: url("../img/Car.png");
+  height: 261px;
+  width: 468px;
+}
+
 .information {
   display: flex;
   padding-top: 70px;
@@ -594,15 +600,20 @@
   text-transform: uppercase;
 }
 
+.catalog_item_title_container {
+  background-color: var(--catalog-item-title-color);
+  margin: 0 auto;
+  width: 940px;
+}
+
 .catalog_item_title {
   color: var(--header-contact-color);
-  background-color: var(--catalog-item-title-color);
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: normal;
+  padding-left: 29px;
   padding-top: 29px;
-  padding-left: 29px; /* Не могу понять почему здесь при паддинге разширяются границы */
   padding-bottom: 30px;
 }
 
@@ -623,7 +634,7 @@
 }
 
 .catalog_products {
-  margin-bottom: 48px;
+  margin-bottom: 59px;
 }
 
 .catalog_products_list {
@@ -631,15 +642,26 @@
   margin: 0;
   padding-top: 28px;
   padding-left: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+}
+
+.catalog_item {
+  margin-right: 20px;
+  margin-bottom: 18px;
+  width: 220px;
+  min-height: 318px;
+}
+
+.catalog_item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog_number_list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 28px 0 0;
 }
 
 .catalog_number_item {
@@ -670,7 +692,6 @@
 }
 
 .catalog_product_information_container {
-  margin-top: 59px;
   padding-top: 64px;
   padding-bottom: 68px  ;
 }

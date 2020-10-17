@@ -138,7 +138,7 @@
           <li class="popular_products_item">
             <h3 class="product_title">Перфоратор BOSCH<br>BFG 9000</h3>
             <a class="product_picture" href="#">
-              <img src="img/BFG%209000.png" alt="Перфоратор BOSCH BFG 9000">
+              <img src="img/BFG%209000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
             </a>
             <p class="popular_product_link">
               <a class="product_link_buy" href="#">Купить</a>
@@ -146,7 +146,7 @@
             </p>
             <p class="product_price">
               <del class="product_old_price">32500 Р.</del>
-              <button class="button_price" type="button">25500 Р.</button>
+              <span class="product_new_price" type="button">25500 Р.</span>
             </p>
           </li>
           <li class="popular_products_item">
@@ -160,13 +160,13 @@
             </p>
             <p class="product_price">
               <del class="product_old_price">22500 Р.</del>
-              <button class="button_price" type="button">15500 Р.</button>
+              <span class="product_new_price" type="button">15500 Р.</span>
             </p>
           </li>
           <li class="popular_products_item">
             <h3 class="product_title">Перфоратор BOSCH<br>BFG 6000</h3>
             <a class="product_picture" href="#">
-              <img src="img/BFG%206000.png" alt="Перфоратор BOSCH BFG 6000">
+              <img src="img/BFG%206000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             </a>
             <p class="popular_product_link">
               <a class="product_link_buy" href="#">Купить</a>
@@ -174,20 +174,20 @@
             </p>
             <p class="product_price">
               <del class="product_old_price">30500 Р.</del>
-              <button class="button_price" type="button">25500 Р.</button>
+              <span class="product_new_price" type="button">25500 Р.</span>
             </p>
           </li>
           <li class="popular_products_item">
             <h3 class="product_title">Перфоратор BOSCH<br>BFG 2000</h3>
             <a class="product_picture" href="#">
-              <img src="img/BFG%202000.png" alt="Перфоратор BOSCH BFG 2000">
+              <img src="img/BFG%202000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             </a>
             <p class="popular_product_link">
               <a class="product_link_buy" href="#">Купить</a>
               <a class="product_link_to_marks" href="#">В закладки</a>
             </p>
             <p class="product_price">
-              <button class="button_price" type="button">12500 Р.</button>
+              <span class="product_new_price" type="button">12500 Р.</span>
             </p>
           </li>
         </ul>
@@ -201,42 +201,42 @@
         <ul class="manufacturer_list">
           <li class="manufacturer_logo">
             <a class="manufacturer_logo_link" href="#">
-              <img src="img/bosch.png" alt="BOSCH">
+              <img src="img/bosch.png" width="126" height="37" alt="BOSCH">
             </a>
           </li>
           <li class="manufacturer_logo">
             <a class="manufacturer_logo_link" href="#">
-              <img src="img/Makita.png" alt="Makita">
+              <img src="img/Makita.png" width="123" height="40" alt="Makita">
             </a>
           </li>
           <li class="manufacturer_logo">
             <a class="manufacturer_logo_link" href="#">
-              <img src="img/DeWALT.png" alt="DeWALT">
+              <img src="img/DeWALT.png" width="146" height="44" alt="DeWALT">
             </a>
           </li>
           <li class="manufacturer_logo">
             <a class="manufacturer_logo_link" href="#">
-              <img src="img/Интерскол%201.png" alt="Интрескол">
+              <img src="img/Интерскол%201.png" width="200" height="76" alt="Интрескол">
             </a>
           </li>
           <li class="manufacturer_logo">
             <a class="manufacturer_logo_link" href="#">
-              <img src="img/Hitachi.png" alt="Hitachi">
+              <img src="img/Hitachi.png" width="169" height="31" alt="Hitachi">
             </a>
           </li>
           <li class="manufacturer_logo">
             <a class="manufacturer_logo_link" href="#">
-              <img src="img/LG.png" alt="LG">
+              <img src="img/LG.png" width="121" height="73" alt="LG">
             </a>
           </li>
           <li class="manufacturer_logo">
             <a class="manufacturer_logo_link" href="#">
-              <img src="img/AEG.png" alt="AEG">
+              <img src="img/AEG.png" width="151" height="96" alt="AEG">
             </a>
           </li>
           <li class="manufacturer_logo">
             <a class="manufacturer_logo_link" href="#">
-              <img src="img/Metabo.png" alt="metabo">
+              <img src="img/Metabo.png" width="204" height="69" alt="metabo">
             </a>
           </li>
         </ul>
@@ -385,5 +385,35 @@
         </div>
       </section>
     </footer>
+
+    <section class="modal modal_write_us">
+      <form class="modal_container">
+        <ul class="modal_list">
+          <li class="modal_item">
+            <label class="label_text" for="name" >Ваше имя:</label><br>
+            <input class="input" id="name" type="text" placeholder="Имя Фмилия">
+          </li>
+          <li class="modal_item">
+            <label class="label_text" for="email">Ваш e-mail:</label><br>
+            <input class="input" id="email" type="email" placeholder="email@example.com">
+          </li>
+          <li class="modal_item">
+            <label class="label_text" for="text">Текс письма:</label><br>
+            <textarea class="input input_text_container" id="text" type="text" placeholder="В свободной форме"></textarea>
+          </li>
+        </ul>
+        <div class="modal_button_container">
+          <button type="submit" class="button modal_button">Отправить</button>
+        </div>
+      </form>
+      <button class="modal_close" type="button" aria-label="Закрыть"></button>
+    </section>
+
+    <section class="modal modal_map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+              width="943" height="442" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </iframe>
+      <button class="modal_close" type="button" aria-label="Закрыть"></button>
+    </section>
   </body>
 </html>

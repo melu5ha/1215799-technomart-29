@@ -1,38 +1,50 @@
 :root {
-  --main-header-color: #f1f5f7;
-  --section-hover-color: rgba(197, 197, 197, 0.3);
-  --section-active-color: rgba(169, 169, 169, 0.3);
-  --footer-nav-active-color: rgba(241, 245, 247, 0.5);
   --footer-catalog-active-color: rgba(255, 209, 128, 0.5);
+  --footer-nav-active-color: rgba(241, 245, 247, 0.5);
+  --section-active-color: rgba(169, 169, 169, 0.3);
+  --section-hover-color: rgba(197, 197, 197, 0.3);
   --basic-third-white: rgba(255, 255, 255, 0.3);
   --basic-half-white: rgba(255, 255, 255, 0.5);
-  --basic-background-color: #293449;
-  --basic-white: #FFFFFF;
-  --marks-active-color: #161D29;
+
+  --modal_batton_container_color: #F4F4F4;
   --checkout-background-color: #63A63E;
-  --checkout-hover-color: #5FBB2D;
-  --login-active-color: #C5C5C5;
-  --header-contact-color: #32425C;
-  --materials-color: #FFBF47;
-  --instruments-color: #3BBCE3;
-  --technics-color: #DC91D8;
-  --sale-color: #8ED78F;
-  --delivery-color: #FFC047;
-  --header-content-color: #EE3643;
-  --button-hover-color: #CA2C37;
-  --button-active-color: #BA2732;
-  --popular-color-title: #F9F5F0;
-  --basic-black: #000000;
-  --products-price-color: #A9A9A9;
   --footer-information-color: #F3F7F9;
-  --footer-catalog-color: #FFD180;
-  --social-list-color: #212A3A;
-  --navigation-active-color: #1D2739;
   --catalog-item-title-color: #F2F6F8;
+  --main-header-logo-active: #BA2732;
+  --navigation-active-color: #1D2739;
+  --product_link_buy_shadow: #367315;
+  --product_link_buy_active: #518534;
+  --basic-background-color: #293449;
+  --header-contact-color: #32425c;
+  --checkout-hover-color: #5FBB2D;
+  --header-content-color: #EE3643;
+  --products-price-color: #A9A9A9;
+  --services_link_shadow: #405069;
+  --filter_toggle_shadow: #CFCFCF;
+  --filter_button_border: #E5E5E5;
+  --footer-catalog-color: #FFD180;
   --catalog-filter-color: #F7F3EC;
   --catalog-border-color: #EAEAEA;
-  --main-header-logo-active: #BA2732;
+  --button-active-color: #BA2732;
+  --popular-color-title: #F9F5F0;
+  --credit_button_color: #FF5357;
+  --filter_toggle_color: #ABABAB;
+  --button-hover-color: #CA2C37;
+  --filter_input_hover: #B5B5B5;
+  --marks-active-color: #161D29;
+  --login-active-color: #C5C5C5;
+  --social-list-color: #212A3A;
+  --main-header-color: #F1F5F7;
+  --instruments-color: #3BBCE3;
   --link-hover-color: #3D546F;
+  --materials-color: #FFBF47;
+  --technics-color: #DC91D8;
+  --delivery-color: #FFC047;
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --filter_line: #D7DCDE;
+  --sale-color: #8ED78F;
+  --bar_color: #00CA74;
 }
 
 .page a {
@@ -65,6 +77,7 @@
 }
 
 /* header*/
+
 .main_header {
   background-color: var(--main-header-color);
   padding-bottom: 60px;
@@ -158,29 +171,17 @@
   opacity: 0.3;
 }
 
-/*.search_field label:before {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 17px;
-  width: 17px;
-  height: 17px;
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  opacity: 0.3;
-}*/
-
 .search_field:hover .icon_search {
   opacity: 1;
 }
 
 .searching:focus {
-  background-color: #FFFFFF;
-  color: black;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
 .search:focus .icon_search path {
-  fill: #EE3643;
+  fill: var(--header-content-color);
 }
 
 .marks {
@@ -274,13 +275,14 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   min-height: 158px;
   position: relative;
 }
 
 .header_content_position {
   margin-left: 30px;
+  margin-top: 43px;
+  align-self: flex-start;
 }
 
 .header_content {
@@ -293,18 +295,18 @@
 }
 
 .header_contact_position {
-  position: absolute;
-  top: 46px;
-  left: 320px;
+  margin-left: auto;
+  margin-right: 69px;
 }
 
 .header_content_number {
+  position: relative;
   display: inline-block;
   color: var(--header-content-color);
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
-  outline: 3px solid #FFFFFF;
+  outline: 3px solid var(--basic-white);
   outline-offset: -3px;
   padding: 7px 45px 8px 74px;
 }
@@ -334,10 +336,6 @@
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0;
-}
-
-.login_item {
   margin-top: 46px;
 }
 
@@ -360,18 +358,6 @@
   left: 19px;
   top: 14px;
 }
-
-/*.login::before {
-  content: "";
-  width: 21px;
-  height: 17px;
-  position: absolute;
-  left: 19px;
-  top: 14px;
-  background-image: url("../img/icon-login.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}*/
 
 .registration {
   padding: 12px 24px;
@@ -462,10 +448,6 @@
   color: var(--header-content-color);
 }
 
-/*.user_link:hover .user_item:nth-child(2):before {
-  color: var(--header-content-color);
-}*/
-
 .user:active, .user_link:active {
   color: var(--login-active-color);
 }
@@ -509,7 +491,7 @@
   background-color: var(--navigation-active-color);
 }
 
-/*container*/
+/*Container*/
 
 .container {
   padding-top: 59px;
@@ -577,9 +559,8 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  position: absolute;
-  top: 64px;
-  left: 22px;
+  margin-top: 14px;
+  margin-left: 22px;
 }
 
 .materials {
@@ -797,9 +778,8 @@
 }
 
 .gallery_button {
-  position: absolute;
-  top: 201px;
-  left: 24px;
+  margin-top: 97px;
+  margin-left: 24px;
 }
 
 .popular_button {
@@ -868,7 +848,7 @@
 
 .popular_products_item,
 .catalog_item {
-  width: 220px;                    /* Почему то есть зазаор между лентой "NEW" и границей. Если сделать ширину карточки 224px или убрать space-between то зазор пропадает*/
+  width: 220px;
   min-height: 318px;
   border: 1px solid var(--catalog-border-color);
   box-sizing: border-box;
@@ -944,8 +924,8 @@
   border: none;
   box-sizing: border-box;
   border-radius: 2px;
-  box-shadow: inset 0 -3px 0 #367315;
-  background-color: #63A63E;
+  box-shadow: inset 0 -3px 0 var(--product_link_buy_shadow);
+  background-color: var(--checkout-background-color);
   position: relative;
 }
 
@@ -963,11 +943,11 @@
 }
 
 .product_link_buy:hover {
-  background-color: #5FBB2D;
+  background-color: var(--checkout-hover-color);
 }
 
 .product_link_buy:active {
-  background-color: #518534;
+  background-color: var(--product_link_buy_active);
 }
 
 .product_link_to_marks {
@@ -977,7 +957,7 @@
   text-transform: uppercase;
   padding: 8px 31px 6px 30px;
   margin: 0;
-  border: 3px solid #63A63E;
+  border: 3px solid var(--checkout-background-color);
   box-sizing: border-box;
   border-radius: 2px;
 }
@@ -1078,11 +1058,11 @@
 }
 
 .manufacturer_logo:hover {
-  box-shadow: 0 0 10px 5px #EAEAEA;
+  box-shadow: 0 0 10px 5px var(--catalog-border-color);
 }
 
 .manufacturer_logo:active {
-  box-shadow: 0 0 10px 5px #EAEAEA;
+  box-shadow: 0 0 10px 5px var(--catalog-border-color);
   opacity: 0.5;
 }
 
@@ -1141,21 +1121,21 @@
   font-weight: bold;
   background-color: var(--header-contact-color);
   padding: 13px 140px 18px 22px;
-  box-shadow: 0 1px 0 #293449,
-              inset 0 1px 0 #405069;
+  box-shadow: 0 1px 0 var(--basic-background-color),
+              inset 0 1px 0 var(--services_link_shadow);
 }
 
 .services_link:hover {
   background-color: var(--basic-background-color);
-  box-shadow: 0 1px 0 #293449,
-              inset 0 1px 0 #405069;
+  box-shadow: 0 1px 0 var(--basic-background-color),
+              inset 0 1px 0 var(--services_link_shadow);
 }
 
 .services_link:focus {
   background-color: var(--basic-white);
   color: var(--header-contact-color);
-  box-shadow: 0 1px 0 #FFFFFF,
-              inset 0 1px 0 #FFFFFF;
+  box-shadow: 0 1px 0 var(--basic-white),
+              inset 0 1px 0 var(--basic-white);
 }
 
 .slider_container {
@@ -1232,7 +1212,7 @@
   font-size: 14px;
   line-height: 18px;
   width: 195px;
-  background-color: #FF5357;
+  background-color: var(--credit_button_color);
   border-radius: 2px;
 }
 
@@ -1395,7 +1375,7 @@
   width: 220px;
   top: 245px;
   left: 0;
-  background-color: #D7DCDE;
+  background-color: var(--filter_line);
 }
 
 .filter_title {
@@ -1439,13 +1419,13 @@
 
 .range_controls .scale {
   height: 2px;
-  background: #D7DCDE;
+  background: var(--filter_line);
 }
 
 .range_controls .bar {
   width: 150px;
   height: 2px;
-  background: #00CA74;
+  background: var(--bar_color);
 }
 
 .range_controls .toggle {
@@ -1456,9 +1436,9 @@
   height: 4px;
   padding: 0;
   border: 8px solid var(--basic-white);
-  background-color: #ABABAB;
+  background-color: var(--filter_toggle_color);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #CFCFCF;
+  box-shadow: 0 2px 1px 0 var(--filter_toggle_shadow);
   cursor: pointer;
 }
 
@@ -1500,7 +1480,7 @@
   width: 220px;
   top: 250px;
   left: 0;
-  background-color: #D7DCDE;
+  background-color: var(--filter_line);
 }
 
 .filter_manufacturers_list {
@@ -1611,7 +1591,7 @@
   box-sizing: border-box;
 }
 
-.filter_input_radio:checked + label::after { /*не понимаю почему не работает как радио кнопка*/
+.filter_input_radio:checked + label::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -1623,19 +1603,19 @@
 }
 
 .filter_input_radio:hover + label::before {
-  border: 4px solid #B5B5B5;
+  border: 4px solid var(--filter_input_hover);
 }
 
 .filter_input_radio:focus + label::before {
-  border: 4px solid #B5B5B5;
+  border: 4px solid var(--filter_input_hover);
 }
 
 .filter_input_radio:checked:hover + label::after {
-  background-color: #B5B5B5;
+  background-color: var(--filter_input_hover);
 }
 
 .filter_input_radio:checked:focus + label::after {
-  background-color: #B5B5B5;
+  background-color: var(--filter_input_hover);
 }
 
 .filter_input_radio:focus + label{
@@ -1650,7 +1630,7 @@
   margin-top: 37px;
   width: 220px;
   background-color: var(--basic-white);
-  border: 1px solid #E5E5E5;
+  border: 1px solid var(--filter_button_border);
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -1959,7 +1939,7 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: linear-gradient(0deg, #212A3A, #212A3A);
+  background: linear-gradient(0deg, var(--social-list-color), var(--social-list-color));
 }
 
 .social_link:hover,
@@ -1975,7 +1955,7 @@
 }
 
 .copyright_link {
-  color: var(--footer-catalog-color);/* В Figma не смог понять какой точно это цвет, поэтому пока взял цвет со ссылок на каталог в футере*/
+  color: var(--footer-catalog-color);
 }
 
 .copyright_item:last-child {
@@ -1989,7 +1969,7 @@
 
 .copyright_link:active {
   text-decoration: none;
-  color: red; /* В Figma не смог понять какой точно это цвет, поэтому пока что просто красный сделал*/
+  color: red;
 }
 
 /*Modal*/
@@ -2058,7 +2038,7 @@
 }
 
 .modal_button_container {
-  background-color: #F4F4F4;
+  background-color: var(--modal_batton_container_color);
 }
 
 .modal_button {

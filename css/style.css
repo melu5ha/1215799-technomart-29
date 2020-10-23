@@ -1322,7 +1322,7 @@
 .catalog_nav_item:not(:last-child):after {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 5px;
   width: 8px;
   right: -25px;
   height: 12px;

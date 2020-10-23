@@ -59,7 +59,6 @@
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: normal;
   font-size: 18px;
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -67,7 +66,6 @@
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: normal;
   font-size: 18px;
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -2099,7 +2097,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  margin: auto 0 auto 397px;
+  margin: auto;
   width: 620px;
   height: 282px;
   background-color: var(--basic-white);

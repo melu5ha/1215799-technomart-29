@@ -53,6 +53,11 @@ let slideControlRight = gallery.querySelector('.slider_control_right');
 let perforates = gallery.querySelector('.slide_perforates');
 let drill = gallery.querySelector('.slide_drill');
 
+let writeUsForm = popupWriteUs.querySelector('.modal_container');
+let formName = writeUsForm.querySelector('.input_name');
+let formEmail = writeUsForm.querySelector('.input_email');
+let formText = writeUsForm.querySelector('.input_text_container');
+
 buttonClick(buttonInformation, popupWriteUs);
 buttonClose(buttonInformationClose, popupWriteUs);
 keyClose(popupWriteUs);
@@ -104,3 +109,12 @@ let sliderSwitch = function (button) {
 
 sliderSwitch(switchLeft);
 sliderSwitch(switchRight);
+
+writeUsForm.addEventListener('submit', function (evt) {
+  if (!formName.value || !formEmail.value || !formText.value) {
+    console.log(formText.value);
+    console.log(formName.value);
+    console.log(formEmail.value);
+    evt.preventDefault();
+  }
+});

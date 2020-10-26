@@ -104,27 +104,27 @@
           <ul class="sections_list_first">
             <li class="sections_item materials">
               <p class="sections_item_title sections_item_title_new">Материалы</p>
-              <a class="sections_item_button button_materials" href="#">на любой вкус</a>
+              <a class="sections_item_button" href="#">на любой вкус</a>
             </li>
             <li class="sections_item instruments">
               <p class="sections_item_title">Инструмент</p>
-              <a class="sections_item_button button_instruments" href="#">на все случаи</a>
+              <a class="sections_item_button" href="#">на все случаи</a>
             </li>
             <li class="sections_item technics">
               <p class="sections_item_title">Техника</p>
-              <a class="sections_item_button button_technics" href="#">для стройки</a>
+              <a class="sections_item_button" href="#">для стройки</a>
             </li>
           </ul>
         </div>
         <div class="second_main_section">
-          <div class="gallery slide_background_1">
+          <div class="gallery slide_background_perforates">
             <div class="gallery_container">
               <ul class="slider_list">
-                <li class="slider_item slide slide_current">
+                <li class="slider_item slide_perforates slide_current">
                   <h3 class="gallery_title">Перфораторы</h3>
                   <p class="gallery_text">Настоящие мужские игрушки</p>
                 </li>
-                <li class="slider_item slide">
+                <li class="slider_item slide_drill">
                   <h3 class="gallery_title">Дрели</h3>
                   <p class="gallery_text">Соседям на радость!</p>
                 </li>
@@ -135,19 +135,19 @@
               <button class="switch_right" type="button"></button>
             </div>
             <div class="slider_controls">
-              <button class="current" type="button" aria-label="Первый слайд"></button>
-              <button type="button" aria-label="Второй слайд"></button>
+              <button class="slider_control_left" type="button" aria-label="Первый слайд"></button>
+              <button class="slider_control_right current" type="button" aria-label="Второй слайд"></button>
             </div>
             <a class="button gallery_button" href="catalog.html">открыть каталог</a>
           </div>
           <ul class="sections_list_second">
             <li class="sections_item sale">
               <p class="sections_item_title">Скидки 50%</p>
-              <a class="sections_item_button button_sale" href="#">на 350 товаров</a>
+              <a class="sections_item_button" href="#">на 350 товаров</a>
             </li>
             <li class="sections_item delivery">
               <p class="sections_item_title">Доставка</p>
-              <a class="sections_item_button button_delivery" href="#">бесплатно</a>
+              <a class="sections_item_button" href="#">бесплатно</a>
             </li>
           </ul>
         </div>
@@ -157,7 +157,7 @@
         <h2 class="visually_hidden">Популярные товары</h2>
         <p class="popular_title">
           <span>популярные товары:</span>
-          <a class="button popular_button" href="#">все популярные товары</a>
+          <a class="button popular_button_product" href="#">все популярные товары</a>
         </p>
         <ul class="popular_products_list">
           <li class="popular_products_item">
@@ -222,7 +222,7 @@
         <h2 class="visually_hidden">Популярные производители</h2>
         <p class="popular_title">
           <span>популярные производители:</span>
-          <a class="button popular_button" href="#">все производители</a>
+          <a class="button popular_button_manufacturer" href="#">все производители</a>
         </p>
         <ul class="manufacturer_list">
           <li class="manufacturer_logo">
@@ -279,18 +279,18 @@
         <div class="services_position">
           <ul class="services_list">
             <li class="services_item">
-              <a class="services_link" href="#">Доставка</a>
+              <a class="services_link button_delivery" href="#">Доставка</a>
             </li>
             <li class="services_item">
-              <a class="services_link" href="#">Гарантия</a>
+              <a class="services_link button_warranty" href="#">Гарантия</a>
             </li>
             <li class="services_item">
-              <a class="services_link" href="#">Кредит</a>
+              <a class="services_link button_credit" href="#">Кредит</a>
             </li>
           </ul>
           <div class="slider_container">
             <ul class="slider_list">
-              <li class="slider_item delivery_slider current_slider">
+              <li class="services_slider_item delivery_slider current_slider">
                 <h2 class="slider_title">Доставка</h2>
                 <p class="services_text slider_text">Мы с удовольствием доставим ваш товар прямо<br>
                   к вашему подъезду совершенно бесплатно!<br>
@@ -298,7 +298,7 @@
                   поднимая его на ваш этаж!
                 </p>
               </li>
-              <li class="slider_item warranty_slider">
+              <li class="services_slider_item warranty_slider">
                 <h2 class="slider_title">Гарантия</h2>
                 <p class="services_text slider_text">Если купленный у нас товар поломается или заискрит,<br>
                   а также в случае пожара, спровоцированного его<br>
@@ -307,7 +307,7 @@
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </li>
-              <li class="slider_item credit_slider">
+              <li class="services_slider_item credit_slider">
                 <h2 class="slider_title">Кредит</h2>
                 <p class="services_text slider_text">
                   Залезть в долговую яму стало проще!<br>
@@ -347,9 +347,9 @@
           <p class="information_text">
             Вы можете забрать товар сами,<br>заехав в наш офис:
           </p>
-          <p class="information_map">
+          <a class="information_map" href="#">
             <img src="img/Map.jpg" height="158" width="300" alt="Месторасположение магазина">
-          </p>
+          </a>
           <a class="button button_map" href="#">заблудились? напишите нам!</a>
         </div>
       </section>
@@ -395,7 +395,7 @@
             <a class="footer_catalog_link" href="#">Техника</a>
           </li>
           <li class="footer_catalog_item">
-            <a class="footer_catalog_link" href="#">Инструменты</a>
+            <a class="footer_catalog_link" href="#">Инструмент</a>
           </li>
           <li class="footer_catalog_item">
             <a class="footer_catalog_link" href="#">Спецпредложения</a>
@@ -471,5 +471,18 @@
       </iframe>
       <button class="modal_close" type="button" aria-label="Закрыть"></button>
     </section>
+    <section class="modal modal_basket">
+      <h2 class="modal_basket_title">Товар добавлен в корзину!</h2>
+      <ul class="basket_button_list">
+        <li class="basket_button_item">
+          <button type="button" class="button basket_button_checkout">Оформить заказ</button>
+        </li>
+        <li class="basket_button_item">
+          <button type="button" class="button basket_button_continue">Продолжить покупки</button>
+        </li>
+      </ul>
+      <button class="modal_close" type="button" aria-label="Закрыть"></button>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>

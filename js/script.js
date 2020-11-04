@@ -71,14 +71,22 @@ let servicesButton = function (button, service) {
     evt.preventDefault();
     if (warrantyService.classList.contains('current_slider')) {
       warrantyService.classList.remove('current_slider');
+      buttonWarranty.classList.remove('services_link_active');
+      buttonWarranty.classList.add('services_link_free');
     }
     if (creditService.classList.contains('current_slider')) {
       creditService.classList.remove('current_slider');
+      buttonCredit.classList.remove('services_link_active');
+      buttonCredit.classList.add('services_link_free');
     }
     if (deliveryService.classList.contains('current_slider')) {
       deliveryService.classList.remove('current_slider');
+      buttonDelivery.classList.remove('services_link_active');
+      buttonDelivery.classList.add('services_link_free');
     }
     service.classList.add('current_slider');
+    button.classList.remove('services_link_free');
+    button.classList.add('services_link_active');
   });
 };
 
@@ -104,6 +112,7 @@ let sliderSwitch = function (button) {
       perforates.classList.add('slide_current');
       drill.classList.remove('slide_current');
     }
+    console.log('работает');
   });
 };
 

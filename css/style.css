@@ -5,6 +5,9 @@
   --section-hover-color: rgba(197, 197, 197, 0.3);
   --basic-third-white: rgba(255, 255, 255, 0.3);
   --basic-half-white: rgba(255, 255, 255, 0.5);
+  --basic-third-black: rgba(0, 0, 0, 0.3);
+  --basic-fourth-black: rgba(0, 0, 0, 0.25);
+  --basic-filter-black: rgba(0, 0, 0, 0.15);
 
   --modal_batton_container_color: #F4F4F4;
   --checkout-background-color: #63A63E;
@@ -40,6 +43,7 @@
   --materials-color: #FFBF47;
   --technics-color: #DC91D8;
   --delivery-color: #FFC047;
+  --basket-button: #F1F1F1;
   --basic-black: #000000;
   --basic-white: #FFFFFF;
   --filter-line: #D7DCDE;
@@ -96,7 +100,7 @@
 .main_header_logo {
   display: block;
   background-color: var(--header-content-color);
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0 -5px 0 var(--basic-fourth-black);
   padding: 12px 56px 13px;
   position: absolute;
 }
@@ -163,7 +167,7 @@
 }
 
 .searching:focus + .icon_search {
-  fill: #EE3643;
+  fill: var(--header-content-color);
 }
 
 .marks {
@@ -287,6 +291,7 @@
 .header_content_number {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   color: var(--header-content-color);
   font-size: 21px;
   line-height: 30px;
@@ -495,7 +500,6 @@
 
 .container {
   padding-top: 59px;
-  /*padding-bottom: 70px;*/
 }
 
 .main_sections,
@@ -660,18 +664,20 @@
 
 .slide_background_perforates {
   background-image: url("../img/Layer 99.jpg");
+  background-color: var(--basic-black);
   width: 620px;
   height: 266px;
 }
 
 .slide_background_drill {
   background-image: url("../img/drill.jpg");
+  background-color: var(--basic-black);
   width: 620px;
   height: 266px;
 }
 
 .gallery_container {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: var(--basic-fourth-black);
   padding-top: 23px;
   padding-bottom: 18px;
 }
@@ -1025,7 +1031,7 @@
 
 .popular_products_item:hover,
 .catalog_item:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px var(--basic-filter-black);
 }
 
 .popular_products_item:hover .product_picture,
@@ -1138,13 +1144,13 @@
   inset 0 1px 0 var(--services_link_shadow);
 }
 
-.services_link:hover {
+.services_link_free:hover {
   background-color: var(--basic-background-color);
   box-shadow: 0 1px 0 var(--basic-background-color),
   inset 0 1px 0 var(--services_link_shadow);
 }
 
-.services_link:focus {
+.services_link_active {
   border: none;
   background-color: var(--basic-white);
   color: var(--header-contact-color);
@@ -1205,6 +1211,7 @@
   left: 165px;
   bottom: -107px;
   background-image: url("../img/credit.png");
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1519,7 +1526,6 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
-  /*-webkit-clip-path: inset(100%);*/
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -1695,12 +1701,13 @@
   display: flex;
 }
 
-.sorting_item button {
+.sorting_button,
+.sorting_icon {
   padding: 0;
   font: inherit;
   text-transform: uppercase;
   border: none;
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--basic-third-black);
   background-color: var(--catalog-filter-color);
   cursor: pointer;
 }
@@ -1728,7 +1735,7 @@
   margin-left: 70px;
 }
 
-.sorting_item:hover .sorting_button{
+.sorting_item:hover .sorting_free{
   background-image: linear-gradient(to right, var(--header-content-color) 100%, transparent 0);
   background-position:0 1.26em;
   background-repeat: repeat-x;
@@ -1736,18 +1743,26 @@
   color: var(--basic-black);
 }
 
-.sorting_item:active .sorting_button,
-.sorting_item:focus .sorting_button {
+.sorting_item:active .sorting_button {
   background-image: none;
   color: var(--header-content-color);
 }
 
-.sorting_icon:hover path {
+.sorting_active {
+  background-image: none;
+  color: var(--header-content-color);
+
+}
+
+.sorting_icon_free:hover path {
   fill: var(--basic-black);
 }
 
-.sorting_icon:active path,
-.sorting_icon:focus path {
+.sorting_icon:active path {
+  fill: var(--header-content-color);
+}
+
+.sorting_icon_active path {
   fill: var(--header-content-color);
 }
 
@@ -1792,6 +1807,7 @@
   text-transform: uppercase;
   font-weight: normal;
   display: inline-block;
+  vertical-align: baseline;
   border: 1px solid var(--catalog-border-color);
   box-sizing: border-box;
   border-radius: 2px;
@@ -1804,15 +1820,16 @@
   margin-right: 0;
 }
 
-.catalog_number_link:hover {
+.catalog_number_link_free:hover {
   border: 1px solid var(--login-active-color);
 }
 
-.catalog_number_link:active {
+.catalog_number_link_free:active {
   border: 1px solid var(--header-content-color);
 }
 
-.catalog_number_link:focus {
+.catalog_number_link_active {
+  color: var(--basic-white);
   background-color: var(--header-content-color);
   border: 1px solid var(--header-content-color);
 }
@@ -1864,10 +1881,10 @@
 
 .footer_logo {
   position: absolute;
+  top: 0;
   background-color: var(--header-content-color);
   padding: 20px 41px 20px;
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
-  top: 0;
+  box-shadow: inset 0 -5px 0 var(--basic-fourth-black);
 }
 
 .footer_nav_list {
@@ -2025,8 +2042,8 @@
   width: 620px;
   height: 430px;
   background-color: var(--basic-white);
-  -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  -webkit-filter: drop-shadow(0px 4px 20px var(--basic-filter-black));
+  filter: drop-shadow(0px 4px 20px var(--basic-filter-black));
   box-shadow: inset 0 7px 0 0 var(--header-content-color);
 }
 
@@ -2117,8 +2134,8 @@
   width: 943px;
   height: 449px;
   background-color: var(--basic-white);
-  -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  -webkit-filter: drop-shadow(0px 4px 20px var(--basic-filter-black));
+  filter: drop-shadow(0px 4px 20px var(--basic-filter-black));
   box-shadow: inset 0 7px 0 0 var(--header-content-color);
 }
 
@@ -2138,8 +2155,8 @@
   width: 620px;
   height: 282px;
   background-color: var(--basic-white);
-  -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  -webkit-filter: drop-shadow(0px 4px 20px var(--basic-filter-black));
+  filter: drop-shadow(0px 4px 20px var(--basic-filter-black));
   box-shadow: inset 0 7px 0 0 var(--header-content-color);
 }
 
@@ -2172,7 +2189,7 @@
   margin: 0;
   padding: 37px 0 37px 114px;
   display: flex;
-  background-color: #F1F1F1;
+  background-color: var(--basket-button);
 }
 
 .basket_button_item:first-child {

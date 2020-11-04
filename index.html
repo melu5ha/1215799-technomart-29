@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_min.css">
   </head>
   <body class="page_body">
     <header class="main_header">
       <div class="main_header_buttons">
         <div class="main_header_buttons_content">
-          <a class="main_header_logo" href="index.html">
+          <a class="main_header_logo" href="#">
             <img src="img/logo-technomart.svg" width="108"
                  height="18" alt="Логотип магазина «Техномарт»">
           </a>
@@ -82,7 +82,7 @@
         <nav class="main_navigation">
           <ul class="navigation_list">
             <li>
-              <a class="navigation_link" href="index.html">Главная</a>
+              <a class="navigation_link" href="#">Главная</a>
             </li>
             <li>
               <a class="navigation_link" href="#">Компания</a>
@@ -290,13 +290,13 @@
         <div class="services_position">
           <ul class="services_list">
             <li class="services_item">
-              <a class="services_link button_delivery" href="#" tabindex="1">Доставка</a>
+              <a class="services_link button_delivery services_link_active" href="#">Доставка</a>
             </li>
             <li class="services_item">
-              <a class="services_link button_warranty" href="#" tabindex="1">Гарантия</a>
+              <a class="services_link button_warranty services_link_free" href="#">Гарантия</a>
             </li>
             <li class="services_item">
-              <a class="services_link button_credit" href="#" tabindex="1">Кредит</a>
+              <a class="services_link button_credit services_link_free" href="#">Кредит</a>
             </li>
           </ul>
           <div class="slider_container">
@@ -370,7 +370,7 @@
     <footer class="main_footer">
       <section class="footer_nav">
         <h2 class="visually_hidden">Дополнительная навигация по сайту</h2>
-        <a class="footer_logo" href="index.html">
+        <a class="footer_logo" href="#">
           <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип магазина «Техномарт»">
         </a>
         <ul class="footer_nav_list">
@@ -465,7 +465,7 @@
           </li>
           <li class="modal_item">
             <label class="label_text" for="text">Текс письма:</label><br>
-            <textarea class="input input_text_container" id="text" type="text" placeholder="В свободной форме"></textarea>
+            <textarea class="input input_text_container" id="text" placeholder="В свободной форме"></textarea>
           </li>
         </ul>
         <div class="modal_button_container">
@@ -494,6 +494,6 @@
       </ul>
       <button class="modal_close" type="button" aria-label="Закрыть"></button>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script_min.js"></script>
   </body>
 </html>

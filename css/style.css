@@ -101,6 +101,7 @@
   display: block;
   background-color: var(--header-content-color);
   box-shadow: inset 0 -5px 0 var(--basic-fourth-black);
+  filter: drop-shadow(0px 4px 4px var(--basic-fourth-black));
   padding: 12px 56px 13px;
   position: absolute;
 }
@@ -113,6 +114,7 @@
   display: flex;
   width: 720px;
   margin-left: 220px;
+  flex-wrap: wrap;
 }
 
 .header_button {
@@ -195,9 +197,10 @@
 .basket {
   position: relative;
   padding-top: 9px;
-  padding-left: 49px;
+  padding-left: 35px;
   box-sizing: border-box;
-  width: 150px;
+  width: 136px;
+  margin: 0 0 0 14px;
 }
 
 .basket_full {
@@ -209,7 +212,7 @@
   width: 15px;
   height: 15px;
   position: absolute;
-  left: 26px;
+  right: 109px;
   top: 12px;
   background-image: url("../img/icon_cart.svg");
   background-repeat: no-repeat;
@@ -265,21 +268,15 @@
   position: relative;
 }
 
-.header_content_position {
-  margin-left: 30px;
-  margin-top: 43px;
-  align-self: flex-start;
-  font: inherit;
-}
-
 .header_content {
   color: var(--header-content-color);
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
-  margin: 0;
   padding: 0;
+  margin: 43px 0 0 30px;
+  align-self: flex-start;
 }
 
 .header_contact_position {
@@ -319,6 +316,7 @@
   line-height: 24px;
   margin-left: 10px;
   margin-top: 3px;
+  width: 250px;
 }
 
 .login_list {
@@ -369,6 +367,8 @@
   margin: 0 0 7px;
   padding: 12px 57px;
   position: relative;
+  width: 300px;
+  box-sizing: border-box;
 }
 
 .user_icon {
@@ -530,9 +530,11 @@
 }
 
 .sections_item_title {
+  display: block;
   margin: 0;
   padding-top: 20px;
   padding-left: 23px;
+  width: 120px;
 }
 
 .materials .sections_item_title_new:after {
@@ -850,6 +852,7 @@
 
 .popular_title span {
   margin-left: 28px;
+  width: 690px;
 }
 
 .popular_products_list {
@@ -973,6 +976,7 @@
   padding: 8px 31px 6px 30px;
   margin: 0;
   border: 3px solid var(--checkout-background-color);
+  background-color: var(--basic-white);
   box-sizing: border-box;
   border-radius: 2px;
 }
@@ -1104,6 +1108,7 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
+  width: 400px;
 }
 
 .services_position {
@@ -1142,6 +1147,8 @@
   padding: 14px 140px 18px 22px;
   box-shadow: 0 1px 0 var(--basic-background-color),
   inset 0 1px 0 var(--services_link_shadow);
+  box-sizing: border-box;
+  width: 240px;
 }
 
 .services_link_free:hover {
@@ -1173,7 +1180,7 @@
   height: 261px;
   position: absolute;
   left: 150px;
-  bottom: -126px;
+  bottom: -98px;
   background-image: url("../img/Car.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1190,7 +1197,7 @@
   width: 465px;
   height: 285px;
   position: absolute;
-  right: -359px;
+  left: 241px;
   bottom: -102px;
   background-image: url("../img/warranty.png");
   background-repeat: no-repeat;
@@ -1209,7 +1216,7 @@
   height: 285px;
   position: absolute;
   left: 165px;
-  bottom: -107px;
+  bottom: -100px;
   background-image: url("../img/credit.png");
   background-color: transparent;
   background-repeat: no-repeat;
@@ -1227,6 +1234,15 @@
   font-weight: normal;
   text-transform: uppercase;
   margin: 0 0 30px;
+}
+
+.slider_text_delivery,
+.slider_text_credit {
+  width: 300px;
+}
+
+.slider_text_warranty {
+  width: 330px;
 }
 
 .credit_button {
@@ -1264,6 +1280,15 @@
   font-size: 13px;
   line-height: 24px;
   margin: 0;
+}
+
+.text_part_two {
+  margin-top: 24px;
+  width: 430px;
+}
+
+.text_part_three {
+  width: 180px;
 }
 
 .companies_list {
@@ -1889,11 +1914,12 @@
 
 .footer_nav_list {
   padding: 0;
-  margin: 0 0 0 auto;
   list-style: none;
-  width: 720px;
+  width: 610px;
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 0 0 0 auto;
 }
 
 .footer_nav_list li:not(:first-child) {
@@ -1922,6 +1948,7 @@
   min-height: 49px;
   margin: 0 0 0 3px;
   padding: 0;
+  width: 330px;
 }
 
 .footer_catalog_list {
@@ -1929,6 +1956,9 @@
   margin: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 610px;
 }
 
 .footer_catalog_list li:not(:first-child) {
@@ -1971,6 +2001,7 @@
 .protect_rights {
   margin: 0 161px 0 0;
   padding-top: 36px;
+  width: 227px;
 }
 
 .social_list {
@@ -2007,6 +2038,7 @@
 
 .copyright_link {
   color: var(--footer-catalog-color);
+  display: block;
 }
 
 .copyright_item:last-child {

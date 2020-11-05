@@ -5,8 +5,8 @@
     <title>Магазин «Техномарт»</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style_min.css">
+    <link rel="stylesheet" href="css/normalize_min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page_body">
     <header class="main_header">
@@ -49,15 +49,13 @@
         </div>
       </div>
       <div class="header_position">
-        <div class="header_content_position">
-          <p class="header_content">
-            Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта
-          </p>
-        </div>
+        <p class="header_content">
+          Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта
+        </p>
         <div class="header_contact_position">
           <a class="header_content_number" href="tel:+78125550555">
             +7 (812) 555-05-55
-          </a><br>
+          </a>
           <div class="header_contacts">
             г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
           </div>
@@ -284,7 +282,7 @@
         <div class="services_container">
           <h2 class="services_title">сервисы</h2>
           <p class="services_text">
-            Хороший интернет-магазин отличается от плохого не только ценами!<br>
+            Хороший интернет-магазин отличается от плохого не только ценами!
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
         <div class="services_position">
@@ -303,7 +301,7 @@
             <ul class="slider_list">
               <li class="services_slider_item delivery_slider current_slider">
                 <h2 class="slider_title">Доставка</h2>
-                <p class="services_text slider_text">Мы с удовольствием доставим ваш товар прямо<br>
+                <p class="services_text slider_text_delivery">Мы с удовольствием доставим ваш товар прямо<br>
                   к вашему подъезду совершенно бесплатно!<br>
                   Ведь мы неплохо заработаем,<br>
                   поднимая его на ваш этаж!
@@ -311,7 +309,7 @@
               </li>
               <li class="services_slider_item warranty_slider">
                 <h2 class="slider_title">Гарантия</h2>
-                <p class="services_text slider_text">Если купленный у нас товар поломается или заискрит,<br>
+                <p class="services_text slider_text_warranty">Если купленный у нас товар поломается или заискрит,<br>
                   а также в случае пожара, спровоцированного его<br>
                   возгоранием,  вы всегда можете быть уверены в нашей<br>
                   гарантии. Мы обменяем сгоревший товар на новый.<br>
@@ -320,7 +318,7 @@
               </li>
               <li class="services_slider_item credit_slider">
                 <h2 class="slider_title">Кредит</h2>
-                <p class="services_text slider_text">
+                <p class="services_text slider_text_credit">
                   Залезть в долговую яму стало проще!<br>
                   Кредитные консультанты придут вам на помощь.
                 </p>
@@ -338,12 +336,12 @@
         <h2 class="visually_hidden">Информация о нас</h2>
         <div class="information_container">
           <h2 class="information_title">компания «техномарт»</h2>
-          <p class="information_text">
+          <p class="information_text text_part_one">
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
             равнодушными любителей сэкономить на гастарбайтерах.
           </p>
-          <p class="information_text"><br>
-            Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          <p class="information_text text_part_two">
+            Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="companies_list">
@@ -355,10 +353,10 @@
         </div>
         <div class="information_location">
           <h2 class="information_title">контакты</h2>
-          <p class="information_text">
-            Вы можете забрать товар сами,<br>заехав в наш офис:
+          <p class="information_text text_part_three">
+            Вы можете забрать товар сами, заехав в наш офис:
           </p>
-          <a class="information_map" href="#">
+          <a class="information_map" href="https://goo.gl/maps/U2CCL87MUJFVLGM98">
             <img src="img/map.jpg" height="158" width="300" alt="Месторасположение магазина">
           </a>
           <a class="button button_map" href="#">заблудились? напишите нам!</a>
@@ -389,13 +387,22 @@
           <li class="footer_nav_item">
             <a class="footer_nav_link" href="#">Контакты</a>
           </li>
+          <li class="footer_nav_item">
+            <a class="footer_nav_link" href="#">Компания</a>
+          </li>
+          <li class="footer_nav_item">
+            <a class="footer_nav_link" href="#">Новости</a>
+          </li>
+          <li class="footer_nav_item">
+            <a class="footer_nav_link" href="catalog.html">Каталог</a>
+          </li>
         </ul>
       </section>
 
       <section class="footer_contacts">
         <h2 class="visually_hidden">Контакты и разделы каталога</h2>
         <p class="footer_contacts_information">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           +7 (812) 555-05-55
         </p>
         <ul class="footer_catalog_list">
@@ -418,7 +425,7 @@
         <h2 class="visually_hidden">Копирайт</h2>
         <div class="footer_copyright_position">
           <p class="protect_rights">
-            © 2010–2019 Компания «Техномарт»<br>Все права защищены
+            © 2010–2019 Компания «Техномарт» Все права защищены
           </p>
           <ul class="social_list">
             <li class="social_button">
@@ -428,7 +435,7 @@
             </li>
             <li class="social_button">
               <a class="social_link" href="#">
-                <svg width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
+                <svg width="19" height="22"  viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
               </a>
             </li>
             <li class="social_button">
@@ -439,11 +446,11 @@
           </ul>
           <ul class="copyright_list">
             <li class="copyright_item">
-              Обратная связь:<br>
+              Обратная связь:
               <a class="copyright_link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
             <li class="copyright_item">
-              Разработано -<br>
+              Разработано -
               <a class="copyright_link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacedemy.ru</a>
             </li>
           </ul>
@@ -486,7 +493,7 @@
       <h2 class="modal_basket_title">Товар добавлен в корзину!</h2>
       <ul class="basket_button_list">
         <li class="basket_button_item">
-          <button type="button" class="button basket_button_checkout">Оформить заказ</button>
+          <a class="button basket_button_checkout" href="#">Оформить заказ</a>
         </li>
         <li class="basket_button_item">
           <button type="button" class="button basket_button_continue">Продолжить покупки</button>

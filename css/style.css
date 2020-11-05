@@ -9,7 +9,7 @@
   --basic-fourth-black: rgba(0, 0, 0, 0.25);
   --basic-filter-black: rgba(0, 0, 0, 0.15);
 
-  --modal_batton_container_color: #F4F4F4;
+  --modal-batton-container-color: #F4F4F4;
   --checkout-background-color: #63A63E;
   --footer-information-color: #F3F7F9;
   --catalog-item-title-color: #F2F6F8;
@@ -186,7 +186,7 @@
   position: absolute;
   left: 20px;
   top: 12px;
-  background-image: url("../img/icon-bookmark.svg");
+  background-image: url("../img/icon_bookmark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -211,7 +211,7 @@
   position: absolute;
   left: 26px;
   top: 12px;
-  background-image: url("../img/icon-cart.svg");
+  background-image: url("../img/icon_cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -308,7 +308,7 @@
   position: absolute;
   left: 39px;
   top: 13px;
-  background-image: url("../img/icon-phone.svg");
+  background-image: url("../img/icon_phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -580,7 +580,7 @@
   position: absolute;
   left: 213px;
   top: 31px;
-  background-image: url("../img/icon-1.svg");
+  background-image: url("../img/icon_1.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -596,7 +596,7 @@
   position: absolute;
   left: 194px;
   top: 34px;
-  background-image: url("../img/icon-2.svg");
+  background-image: url("../img/icon_2.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -612,7 +612,7 @@
   position: absolute;
   left: 191px;
   top: 31px;
-  background-image: url("../img/icon-3.svg");
+  background-image: url("../img/icon_3.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -628,7 +628,7 @@
   position: absolute;
   left: 196px;
   top: 26px;
-  background-image: url("../img/icon-4.svg");
+  background-image: url("../img/icon_4.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -644,7 +644,7 @@
   position: absolute;
   left: 191px;
   top: 32px;
-  background-image: url("../img/icon-5.svg");
+  background-image: url("../img/icon_5.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -663,7 +663,7 @@
 }
 
 .slide_background_perforates {
-  background-image: url("../img/Layer 99.jpg");
+  background-image: url("../img/layer_99.jpg");
   background-color: var(--basic-black);
   width: 620px;
   height: 266px;
@@ -951,7 +951,7 @@
   position: absolute;
   left: 30px;
   top: 11px;
-  background-image: url("../img/icon-cart.svg");
+  background-image: url("../img/icon_cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
@@ -1125,7 +1125,7 @@
   width: 10px;
   top: -49px;
   left: 231px;
-  background-image: url("../img/Layer 118.png");
+  background-image: url("../img/layer_118.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -1552,7 +1552,7 @@
   top: -2px;
   width: 23px;
   height: 23px;
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url("../img/checkbox_off.svg");
   background-repeat: no-repeat;
 }
 
@@ -1564,7 +1564,7 @@
   top: -2px;
   width: 23px;
   height: 23px;
-  background-image: url("../img/checkbox-off-hover.svg");
+  background-image: url("../img/checkbox_off_hover.svg");
   background-repeat: no-repeat;
 }
 
@@ -1575,14 +1575,14 @@
   left: -35px;
   width: 27px;
   height: 23px;
-  background-image: url("../img/checkbox-on.svg"), url("../img/checkbox-on(1).svg");
+  background-image: url("../img/checkbox_on.svg"), url("../img/checkbox_on(1).svg");
   background-position: 0 0, 4px 1px;
   background-repeat: no-repeat;
   background-color: var(--basic-white);
 }
 
 .filter_input_checkbox:checked:hover + label::after {
-  background-image: url("../img/checkbox-on-hover.svg"), url("../img/checkbox-on(1)-hover.svg");
+  background-image: url("../img/checkbox_on_hover.svg"), url("../img/checkbox_on(1)_hover.svg");
 }
 
 .filter_power {
@@ -2090,7 +2090,7 @@
 }
 
 .modal_button_container {
-  background-color: var(--modal_batton_container_color);
+  background-color: var(--modal-batton-container-color);
 }
 
 .modal_button {
@@ -2179,7 +2179,7 @@
   height: 66px;
   left: 81px;
   top: 55px;
-  background-image: url("../img/icon-mark.svg");
+  background-image: url("../img/icon_mark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }

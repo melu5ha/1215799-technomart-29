@@ -13,6 +13,7 @@ let buttonClose = function (button, popup) {
   button.addEventListener('click', function (evt) {
     evt.preventDefault();
     popup.classList.remove('modal_show');
+    popup.classList.remove('modal_error');
   });
 };
 
@@ -20,6 +21,7 @@ let keyClose = function (popup) {
   window.addEventListener('keydown', function (evt){
     if (evt.key === 'Escape') {
       popup.classList.remove('modal_show');
+      popup.classList.remove('modal_error');
     }
   });
 }
@@ -121,9 +123,9 @@ sliderSwitch(switchRight);
 
 writeUsForm.addEventListener('submit', function (evt) {
   if (!formName.value || !formEmail.value || !formText.value) {
-    console.log(formText.value);
-    console.log(formName.value);
-    console.log(formEmail.value);
     evt.preventDefault();
+    popupWriteUs.classList.remove('modal_error');
+    popupWriteUs.offsetWidth = popupWriteUs.offsetWidth;
+    popupWriteUs.classList.add('modal_error');
   }
 });

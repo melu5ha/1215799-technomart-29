@@ -58,6 +58,7 @@
               <span class="user_name">Равшан Джамшутович</span>
             </a>
             <a class="logout" href="#">
+              <span class="visually_hidden">Выход</span>
               <svg class="logout_icon" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5"/>
                 <path d="M2.10598 13.952V3.048C2.12398 2.672 2.27698 1.991 3.11598 1.991H8.14297V0H3.11598C0.937975 0 0.111975 1.81 0.0869751 3.027V13.973C0.111975 15.189 0.937975 17 3.11598 17H8.14297V15.01H3.11598C2.27698 15.01 2.12398 14.327 2.10598 13.952Z" fill="#C5C5C5"/>
@@ -140,8 +141,12 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle_min" tabindex="0"></div>
-                  <div class="toggle toggle_max" tabindex="0"></div>
+                  <div class="toggle toggle_min" tabindex="0">
+                    <span class="visually_hidden">Минимальная цена</span>
+                  </div>
+                  <div class="toggle toggle_max" tabindex="0">
+                    <span class="visually_hidden">Максимальная цена</span>
+                  </div>
                 </div>
                 <div class="price_controls">
                   <label class="min_price">
@@ -218,6 +223,7 @@
               </li>
               <li class="sorting_item">
                 <button class="sorting_top sorting_icon sorting_icon_active">
+                  <span class="visually_hidden">Сортировка по возрастанию</span>
                   <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5"/>
                   </svg>
@@ -225,6 +231,7 @@
               </li>
               <li class="sorting_item">
                 <button class="sorting_down sorting_icon sorting_icon_free">
+                  <span class="visually_hidden">Сортировка по убыванию</span>
                   <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.66241 10L0.162415 0H11.1624" fill="#C5C5C5"/>
                   </svg>

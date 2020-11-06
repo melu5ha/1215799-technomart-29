@@ -285,7 +285,8 @@
   margin-top: 46px;
 }
 
-.header_content_number {
+.header_content_number,
+.header_content_number:focus {
   position: relative;
   display: inline-block;
   vertical-align: baseline;
@@ -582,7 +583,7 @@
   position: absolute;
   left: 213px;
   top: 31px;
-  background-image: url("../img/icon_1.svg");
+  background-image: url("../img/icon_materials.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -598,7 +599,7 @@
   position: absolute;
   left: 194px;
   top: 34px;
-  background-image: url("../img/icon_2.svg");
+  background-image: url("../img/icon_instruments.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -614,7 +615,7 @@
   position: absolute;
   left: 191px;
   top: 31px;
-  background-image: url("../img/icon_3.svg");
+  background-image: url("../img/icon_technics.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -630,7 +631,7 @@
   position: absolute;
   left: 196px;
   top: 26px;
-  background-image: url("../img/icon_4.svg");
+  background-image: url("../img/icon_discounts.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -646,7 +647,7 @@
   position: absolute;
   left: 191px;
   top: 32px;
-  background-image: url("../img/icon_5.svg");
+  background-image: url("../img/icon_delivery.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -665,7 +666,7 @@
 }
 
 .slide_background_perforates {
-  background-image: url("../img/layer_99.jpg");
+  background-image: url("../img/perforators.jpg");
   background-color: var(--basic-black);
   width: 620px;
   height: 266px;
@@ -1130,7 +1131,7 @@
   width: 10px;
   top: -49px;
   left: 231px;
-  background-image: url("../img/layer_118.png");
+  background-image: url("../img/shadow.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -1181,7 +1182,7 @@
   position: absolute;
   left: 150px;
   bottom: -98px;
-  background-image: url("../img/Car.png");
+  background-image: url("../img/car.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: transparent;
@@ -1377,7 +1378,7 @@
   width: 8px;
   right: -25px;
   height: 12px;
-  background-image: url("../img/Shape.svg");
+  background-image: url("../img/shape.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1600,14 +1601,14 @@
   left: -35px;
   width: 27px;
   height: 23px;
-  background-image: url("../img/checkbox_on.svg"), url("../img/checkbox_on(1).svg");
+  background-image: url("../img/checkbox_on.svg"), url("../img/checkbox_on_mark.svg");
   background-position: 0 0, 4px 1px;
   background-repeat: no-repeat;
   background-color: var(--basic-white);
 }
 
 .filter_input_checkbox:checked:hover + label::after {
-  background-image: url("../img/checkbox_on_hover.svg"), url("../img/checkbox_on(1)_hover.svg");
+  background-image: url("../img/checkbox_on_hover.svg"), url("../img/checkbox_on_mark_hover.svg");
 }
 
 .filter_power {
@@ -1670,7 +1671,7 @@
   background-color: var(--filter-input-hover);
 }
 
-.filter_input_radio:focus + label{
+.filter_input_radio:focus + label {
   opacity: 0.4;
 }
 
@@ -1900,13 +1901,11 @@
   align-items: flex-start;
   margin: 0 auto 29px;
   position: relative;
-  padding-top: 37px;
   box-sizing: border-box;
 }
 
 .footer_logo {
-  position: absolute;
-  top: 0;
+  align-self: flex-start;
   background-color: var(--header-content-color);
   padding: 20px 41px 20px;
   box-shadow: inset 0 -5px 0 var(--basic-fourth-black);
@@ -1919,7 +1918,7 @@
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  margin: 0 0 0 auto;
+  margin: 37px 0 0 auto;
 }
 
 .footer_nav_list li:not(:first-child) {
@@ -2245,6 +2244,13 @@
   animation-duration: 0.3s;
 }
 
+.modal_error {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+}
+
 @-webkit-keyframes appearance {
   0% {
     transform: translateY(-500px);
@@ -2268,3 +2274,44 @@
     transform: translateY(0);
   }
 }
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+

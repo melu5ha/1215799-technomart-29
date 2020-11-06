@@ -1182,7 +1182,7 @@
   position: absolute;
   left: 150px;
   bottom: -98px;
-  background-image: url("../img/car.png");
+  background-image: url("../img/truck.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: transparent;
@@ -1378,7 +1378,7 @@
   width: 8px;
   right: -25px;
   height: 12px;
-  background-image: url("../img/shape.svg");
+  background-image: url("../img/icon_shape.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
